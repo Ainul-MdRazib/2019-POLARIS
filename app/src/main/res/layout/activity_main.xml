@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/chick_color"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/myLampID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Lamp ID"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/lampIdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Enter Lamp ID"
+            android:inputType="number" />
+    </LinearLayout>
+
+</LinearLayout>
