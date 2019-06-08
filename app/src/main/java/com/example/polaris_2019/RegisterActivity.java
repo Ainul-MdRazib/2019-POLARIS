@@ -68,12 +68,9 @@ public class RegisterActivity extends AppCompatActivity {
         RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mDisplayName = nameField.getText().toString();
-                mEmail = emailField.getText().toString();
-                mPass = passField.getText().toString();
 
-                Toast.makeText(RegisterActivity.this, mDisplayName + " " + mEmail
-                        + " " + mPass, Toast.LENGTH_LONG).show();
+                testUserInfo();
+
                 /*
                 if(mPass.equals("") | mDisplayName.equals("") | mEmail.equals("")){
                     Toast.makeText(RegisterActivity.this, "Please fill out all fields.",
@@ -120,6 +117,18 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void testUserInfo(){
+        mDisplayName = nameField.getText().toString();
+        mEmail = emailField.getText().toString();
+        mPass = passField.getText().toString();
+
+        Toast.makeText(RegisterActivity.this, mDisplayName + " " + mEmail
+                + " " + mPass, Toast.LENGTH_LONG).show();
+
+        Toast.makeText(RegisterActivity.this, "User info not stored. " +
+                "Click on Back button to return to Login Screen.", Toast.LENGTH_LONG).show();
     }
 
     /*

@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -11,25 +12,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /*
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;*/
 
-// Login page
+// TODO: Authentication libraries to be added throughh imports and Gradle dependencies
+
+*/
 
 public class LoginActivity extends AppCompatActivity {
-    //private FirebaseAuth mAuth;
-    private ProgressDialog mProgress;
+
+    private SharedPreferences mPref;
 
     private String TAG = "001";
 
     private TextView EmailField;
     private TextView PassField;
+
+    private String dEmail = "booga@sutd.edu.sg";
+    private String dPass = "boogaboo";
 
     private Button LoginButton;
     private Button RegisterButton;
@@ -38,18 +41,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-
-        /*
-        FirebaseApp.initializeApp(LoginActivity.this);
-        mAuth = FirebaseAuth.getInstance();
-
-
-
-        Intent intent = getIntent();
-        String activity = intent.getStringExtra("from"); */
-
-        /* PERMISSIONS */
 
         int PERMISSION_ALL = 1;
         String[] PERMISSIONS = {
@@ -61,7 +52,6 @@ public class LoginActivity extends AppCompatActivity {
         if(!hasPermissions(this, PERMISSIONS)){
             ActivityCompat.requestPermissions(this, PERMISSIONS, PERMISSION_ALL);
         }
-
 
         LoginButton = findViewById(R.id.LoginButton);
         RegisterButton = findViewById(R.id.RegisterButton);
@@ -83,11 +73,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        /* LOG IN */
-        /* TODO: AUTH STUFF */
-        //final FirebaseUser currentUser = mAuth.getCurrentUser();
-
-        /*
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
-        });*/
+        });
 
     }
 
@@ -118,9 +103,20 @@ public class LoginActivity extends AppCompatActivity {
         return true;
     }
 
-    /*
-    protected void signIn(String email, String password){;
 
+    protected void signIn(String email, String password){
+
+        // TODO: remove when implementing database
+        if(email.equals(dEmail) && password.equals(dPass)){
+            finish();
+            startActivity(new Intent(LoginActivity.this, ConnectAnotherActivity.class));
+        }else{
+            Toast.makeText(LoginActivity.this, "Authentication failed.",
+                    Toast.LENGTH_SHORT).show();
+        }
+
+        // TODO: User LOGIN authentication
+        /*
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -142,7 +138,7 @@ public class LoginActivity extends AppCompatActivity {
                         }
 
                     }
-                });
+                });*/
     }
-    */
+
 }
