@@ -18,7 +18,7 @@ public class ConnectAnotherActivity extends AppCompatActivity {
         mToolbar = findViewById(R.id.connectothertoolbar);
         setSupportActionBar(mToolbar);
         mToolbar.setTitle("Pair with another Lamp");
-        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        mToolbar.setNavigationOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
