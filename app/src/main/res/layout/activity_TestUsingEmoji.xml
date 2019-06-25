@@ -17,7 +17,8 @@
         android:minHeight="?attr/actionBarSize"
         android:navigationIcon="@drawable/baseline_arrow_back_black_18dp"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/test_emoji_name"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
@@ -36,16 +37,16 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="100dp"
+                android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@id/TestUsingEmojiToolBar">
 
                 <ImageButton
                     android:id="@+id/emoji_hapiness"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:background="white"
                     android:scaleType="fitCenter"
                     android:stateListAnimator="@anim/lift_on_touch"
@@ -55,8 +56,8 @@
                     android:id="@+id/emoji_sad"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:background="white"
                     android:scaleType="fitCenter"
                     android:stateListAnimator="@anim/lift_on_touch"
@@ -66,8 +67,8 @@
                     android:id="@+id/emoji_angry"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:background="white"
                     android:scaleType="fitCenter"
                     android:stateListAnimator="@anim/lift_on_touch"
@@ -77,11 +78,11 @@
                     android:id="@+id/emoji_dead"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:background="white"
-                    android:scaleType="fitCenter"
                     android:padding="100dp"
+                    android:scaleType="fitCenter"
                     android:stateListAnimator="@anim/lift_on_touch"
                     app:srcCompat="@drawable/dead" />
 
@@ -89,11 +90,11 @@
                     android:id="@+id/emoji_kiss"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:background="white"
-                    android:scaleType="fitCenter"
                     android:padding="100dp"
+                    android:scaleType="fitCenter"
                     android:stateListAnimator="@anim/lift_on_touch"
                     app:srcCompat="@drawable/kiss" />
 
@@ -101,11 +102,11 @@
                     android:id="@+id/emoji_indifferent"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:background="white"
-                    android:scaleType="fitCenter"
                     android:padding="100dp"
+                    android:scaleType="fitCenter"
                     android:stateListAnimator="@anim/lift_on_touch"
                     app:srcCompat="@drawable/indifferent" />
 
@@ -113,11 +114,11 @@
                     android:id="@+id/emoji_embarrassed"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:background="white"
-                    android:scaleType="fitCenter"
                     android:padding="100dp"
+                    android:scaleType="fitCenter"
                     android:stateListAnimator="@anim/lift_on_touch"
                     app:srcCompat="@drawable/embarrassed" />
 
@@ -125,11 +126,11 @@
                     android:id="@+id/emoji_tongue"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:background="white"
-                    android:scaleType="fitCenter"
                     android:padding="100dp"
+                    android:scaleType="fitCenter"
                     android:stateListAnimator="@anim/lift_on_touch"
                     app:srcCompat="@drawable/tongue" />
 
@@ -140,10 +141,16 @@
     </ScrollView>
 
     <TextView
-        android:id=""
+        android:id="@+id/test_emoji_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        />
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black_overlay"
+        android:text="Colour_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emojitest_scrollView" />
 
 </android.support.constraint.ConstraintLayout>
