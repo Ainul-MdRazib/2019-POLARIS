@@ -20,10 +20,6 @@
         </activity>
         <activity android:name=".ConnectAnotherActivity">
         </activity>
-        <activity android:name=".testORpairActivity">
-        </activity>
-        <activity android:name=".TestMyLampActivity">
-        </activity>
     </application>
 
 </manifest>
