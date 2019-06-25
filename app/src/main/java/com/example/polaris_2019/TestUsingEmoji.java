@@ -78,14 +78,14 @@ public class TestUsingEmoji extends AppCompatActivity {
                 finish();
             }
         });
-        hapiness.setOnClickListener(new View.OnClickListener() {
+        kiss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
                 finish();
             }
         });
-        hapiness.setOnClickListener(new View.OnClickListener() {
+        dead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
