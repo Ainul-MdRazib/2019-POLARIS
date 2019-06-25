@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ll"
+    android:id="@+id/horiView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fcfcfc"
@@ -15,7 +15,6 @@
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="111dp"
-        android:stateListAnimator="@anim/lift_on_touch"
         card_view:cardUseCompatPadding="true"
         card_view:cardCornerRadius="2dp"
         card_view:cardElevation="10dp" >
@@ -33,7 +32,6 @@
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="111dp"
-        android:stateListAnimator="@anim/lift_on_touch"
         card_view:cardUseCompatPadding="true"
         card_view:cardCornerRadius="2dp"
         card_view:cardElevation="10dp" >

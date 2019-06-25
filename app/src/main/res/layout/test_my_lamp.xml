@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ll"
+    android:id="@+id/horiView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fcfcfc"
@@ -27,8 +27,7 @@
         android:layout_height="150dp"
         android:clickable="true"
         android:padding="10dp"
-        android:stateListAnimator="@anim/lift_on_touch"
-        card_view:srcCompat="@drawable/happiness" />
+        card_view:srcCompat="@drawable/circleshape" />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -41,11 +40,10 @@
         android:id="@+id/pallete"
             android:layout_gravity="center"
             android:clickable="true"
-        android:stateListAnimator="@anim/lift_on_touch"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:padding="10dp"
-        card_view:srcCompat="@drawable/paint_palette" />
+        card_view:srcCompat="@drawable/circleshape" />
     </android.support.v7.widget.CardView>
 
 
