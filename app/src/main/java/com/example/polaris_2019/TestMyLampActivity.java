@@ -17,7 +17,7 @@ public class TestMyLampActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_connectother);
+        setContentView(R.layout.activity_TestMyLamp);
 
         mToolbar = findViewById(R.id.TestMyLampToolBar);
         setSupportActionBar(mToolbar);

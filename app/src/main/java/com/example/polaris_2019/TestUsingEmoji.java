@@ -6,23 +6,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class TestUsingEmoji extends AppCompatActivity {
 
     private Toolbar mToolbar;
-    private ImageButton hapiness;
+    private ImageButton happiness;
     private ImageButton sad;
     private ImageButton angry;
     private ImageButton indifferent;
     private ImageButton embarrassed;
     private ImageButton kiss;
     private ImageButton dead;
+    TextView NewText;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_connectother);
+        setContentView(R.layout.activity_TestUsingEmoji);
 
         mToolbar = findViewById(R.id.TestUsingEmojiToolBar);
         setSupportActionBar(mToolbar);
@@ -35,7 +37,7 @@ public class TestUsingEmoji extends AppCompatActivity {
         });
         mToolbar.setNavigationIcon(R.drawable.baseline_arrow_back_black_18dp);
 
-        hapiness = (ImageButton) findViewById(R.id.emoji_hapiness);
+        happiness = (ImageButton) findViewById(R.id.emoji_hapiness);
         sad = (ImageButton) findViewById(R.id.emoji_sad);
         angry = (ImageButton) findViewById(R.id.emoji_angry);
         indifferent = (ImageButton) findViewById(R.id.emoji_indifferent);
@@ -43,53 +45,48 @@ public class TestUsingEmoji extends AppCompatActivity {
         kiss = (ImageButton) findViewById(R.id.emoji_kiss);
         dead = (ImageButton) findViewById(R.id.emoji_dead);
 
-        hapiness.setOnClickListener(new View.OnClickListener() {
+        NewText = (TextView)findViewById(R.id.test_emoji_name);
+
+        happiness.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
-                finish();
+                NewText.setText("Happy");
             }
         });
         sad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
-                finish();
+                NewText.setText("Sad");
             }
         });
         angry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
-                finish();
+                NewText.setText("Angry");
             }
         });
         indifferent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
-                finish();
-            }
-        });
-        hapiness.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
-                finish();
+                NewText.setText("Indifferent");
             }
         });
         kiss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
-                finish();
+                NewText.setText("Lovely");
             }
         });
         dead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TestUsingEmoji.this, TestUsingEmoji.class));
-                finish();
+                NewText.setText("Dead");
+            }
+        });
+        embarrassed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NewText.setText("Embarrassed");
             }
         });
 
