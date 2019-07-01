@@ -29,7 +29,7 @@
             android:background="@drawable/single_message_bg_other"
             android:minWidth="100dp"
             android:padding="10dp"
-            android:text="no"
+            android:text="m ipsum generator for typographers generator.lorem-ipsum.info/ Lorem Ipsum: usage Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups."
             android:textSize="14sp"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="@id/message_timestamp"

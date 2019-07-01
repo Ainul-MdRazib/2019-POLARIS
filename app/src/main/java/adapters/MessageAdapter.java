@@ -1,4 +1,4 @@
-package com.khaisheen.egenda.Adapters;
+package adapters;
 
 import android.graphics.Color;
 import android.support.annotation.NonNull;
@@ -20,7 +20,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
     FirebaseAuth mAuth;
 
-    public MessageAdapter( List<SingleMessage> mMessageList){
+    public MessageAdapter(List<SingleMessage> mMessageList){
         this.mMessageList = mMessageList;
     }
 

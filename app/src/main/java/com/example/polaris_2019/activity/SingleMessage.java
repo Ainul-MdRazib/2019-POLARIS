@@ -1,4 +1,4 @@
-package com.khaisheen.egenda.Activities;
+package com.example.polaris_2019.activity;
 
 import com.google.firebase.Timestamp;
 
