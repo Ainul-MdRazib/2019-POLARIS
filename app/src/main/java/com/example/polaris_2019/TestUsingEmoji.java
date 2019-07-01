@@ -24,7 +24,7 @@ public class TestUsingEmoji extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_TestUsingEmoji);
+        setContentView(R.layout.activity_testusingemoji);
 
         mToolbar = findViewById(R.id.TestUsingEmojiToolBar);
         setSupportActionBar(mToolbar);

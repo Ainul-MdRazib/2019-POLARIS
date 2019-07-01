@@ -17,7 +17,7 @@ public class testORpairActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_testORpair);
+        setContentView(R.layout.activity_testorpair);
 
         mToolbar = findViewById(R.id.testORrepairToolBar);
         setSupportActionBar(mToolbar);
