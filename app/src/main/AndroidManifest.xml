@@ -20,6 +20,18 @@
         </activity>
         <activity android:name=".activity.ConnectAnotherActivity">
         </activity>
+        <activity android:name=".ChatActivity">
+        </activity>
+        <activity android:name=".testORpairActivity">
+        </activity>
+        <activity android:name=".Main2Activity">
+        </activity>
+        <activity android:name=".TestMyLampActivity">
+        </activity>
+        <activity android:name=".TestUsingPalette">
+        </activity>
+        <activity android:name=".TestUsingEmoji">
+        </activity>
     </application>
 
 </manifest>

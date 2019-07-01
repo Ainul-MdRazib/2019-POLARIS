@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:background="white"
+            android:background="#ffffff"
             android:padding="70dp"
             android:stateListAnimator="@anim/lift_on_touch"
             app:srcCompat="@drawable/happiness" />
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
-            android:background="white"
+            android:background="#ffffff"
             android:padding="70dp"
             app:srcCompat="@drawable/paint_palette" />
 

@@ -2,25 +2,35 @@ package com.example.polaris_2019.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
+<<<<<<< HEAD:app/src/main/java/com/example/polaris_2019/activity/TestUsingPalette.java
 import com.example.polaris_2019.R;
+=======
+import yuku.ambilwarna.AmbilWarnaDialog;
+>>>>>>> 2906817983bacad0aad1ab232293c6f60252782e:app/src/main/java/com/example/polaris_2019/TestUsingPalette.java
 
 public class TestUsingPalette extends AppCompatActivity {
 
     private Toolbar mToolbar;
     private ImageButton palette;
     private ImageButton emoji;
+    ConstraintLayout mLayout;
+    int mDefaultcolour;
+    Button mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_connectother);
+        setContentView(R.layout.activity_testusingpalette);
 
-        mToolbar = findViewById(R.id.TestMyLampToolBar);
+        mToolbar = findViewById(R.id.TestUsingPaletteToolBar);
         setSupportActionBar(mToolbar);
         mToolbar.setTitle("Test MyLamp");
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -31,29 +41,34 @@ public class TestUsingPalette extends AppCompatActivity {
         });
         mToolbar.setNavigationIcon(R.drawable.baseline_arrow_back_black_18dp);
 
-        emoji = (ImageButton) findViewById(R.id.emoji_imagebutton);
-
-        emoji.setOnClickListener(new View.OnClickListener() {
+        // colour picker code
+        mLayout = (ConstraintLayout) findViewById(R.id.testusingpalette);
+        mDefaultcolour = ContextCompat.getColor(TestUsingPalette.this, R.color.colorPrimary);
+        mButton = (Button) findViewById(R.id.colour_pick_button);
+        mButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(TestUsingPalette.this, TestUsingEmoji.class));
-                finish();
+            public void onClick(View view){
+                openColourPicker();
             }
         });
-
-        palette = (ImageButton) findViewById(R.id.palette_imagebutton);
-
-        palette.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(TestUsingPalette.this, TestUsingPalette.class));
-                finish();
-            }
-        });
-
-
     }
 
+    // colour picker code
+    public void openColourPicker(){
+        AmbilWarnaDialog colourPicker = new AmbilWarnaDialog(this, mDefaultcolour, new AmbilWarnaDialog.OnAmbilWarnaListener() {
+            @Override
+            public void onCancel(AmbilWarnaDialog dialog) {
+
+            }
+
+            @Override
+            public void onOk(AmbilWarnaDialog dialog, int colour) {
+                mDefaultcolour = colour;
+                mLayout.setBackgroundColor(mDefaultcolour);
+            }
+        });
+        colourPicker.show();
+    }
 }
 
 
