@@ -61,7 +61,11 @@ public class TestUsingPalette extends AppCompatActivity {
             public void onOk(AmbilWarnaDialog dialog, int colour) {
                 mDefaultcolour = colour;
                 mLayout.setBackgroundColor(mDefaultcolour);
+                // TODO Write code to change the colour of the lamp here
+
             }
+
+
         });
         colourPicker.show();
     }
