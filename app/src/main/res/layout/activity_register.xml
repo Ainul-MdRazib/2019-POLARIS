@@ -9,16 +9,9 @@
     android:orientation="vertical"
     tools:context=".activity.RegisterActivity">
 
-    <android.support.v7.widget.Toolbar
+    <include
         android:id="@+id/registertoolbar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:navigationIcon="@drawable/baseline_arrow_back_black_18dp"
-        android:theme="?attr/actionBarTheme"/>
+        layout="@layout/toolbar" />
 
     <ImageView
         android:id="@+id/connectotherLogo"

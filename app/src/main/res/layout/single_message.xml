@@ -6,6 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <include
+        android:id="@+id/single_message_toolBar"
+        layout="@layout/toolbar" />
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/message_container"
         android:layout_width="match_parent"
@@ -28,7 +32,7 @@
             android:id="@+id/message_text_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/single_message_bg"
+            android:background="@drawable/single_message_bg_me"
             android:minWidth="100dp"
             android:padding="10dp"
             android:text="no"
