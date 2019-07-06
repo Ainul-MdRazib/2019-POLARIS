@@ -7,7 +7,7 @@
     android:background="@color/backgroundcolor"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
+    tools:context=".activity.RegisterActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/registertoolbar"

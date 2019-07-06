@@ -1,7 +1,6 @@
-package com.example.polaris_2019;
+package com.example.polaris_2019.activity;
 
 import android.Manifest;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.polaris_2019.R;
 
 /*
 import com.google.android.gms.tasks.OnCompleteListener;

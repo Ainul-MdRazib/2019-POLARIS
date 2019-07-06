@@ -1,4 +1,4 @@
-package com.example.polaris_2019;
+package com.example.polaris_2019.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.polaris_2019.R;
 
 public class TestUsingEmoji extends AppCompatActivity {
 

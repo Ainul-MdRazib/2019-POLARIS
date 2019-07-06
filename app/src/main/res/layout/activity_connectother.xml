@@ -8,7 +8,7 @@
     android:background="@color/backgroundcolor"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ConnectAnotherActivity">
+    tools:context=".activity.ConnectAnotherActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/connectothertoolbar"

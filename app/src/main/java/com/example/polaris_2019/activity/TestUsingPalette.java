@@ -1,4 +1,4 @@
-package com.example.polaris_2019;
+package com.example.polaris_2019.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+<<<<<<< HEAD:app/src/main/java/com/example/polaris_2019/activity/TestUsingPalette.java
+import com.example.polaris_2019.R;
+=======
 import yuku.ambilwarna.AmbilWarnaDialog;
+>>>>>>> 2906817983bacad0aad1ab232293c6f60252782e:app/src/main/java/com/example/polaris_2019/TestUsingPalette.java
 
 public class TestUsingPalette extends AppCompatActivity {
 
