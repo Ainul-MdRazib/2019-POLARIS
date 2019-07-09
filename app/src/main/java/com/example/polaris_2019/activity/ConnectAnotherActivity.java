@@ -1,5 +1,6 @@
 package com.example.polaris_2019.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -27,13 +28,6 @@ public class ConnectAnotherActivity extends AppCompatActivity {
         mToolbar = findViewById(R.id.connectothertoolbar);
         setSupportActionBar(mToolbar);
         mToolbar.setTitle("Pair with another Lamp");
-        mToolbar.setNavigationOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
-        mToolbar.setNavigationIcon(R.drawable.baseline_arrow_back_black_18dp);
 
         OtherUsernameField = (EditText) findViewById(R.id.OtherUsernameField);
         OtherIdField = (EditText) findViewById(R.id.OtherIDField);
@@ -49,12 +43,30 @@ public class ConnectAnotherActivity extends AppCompatActivity {
                             "Please fill in only one field", Toast.LENGTH_LONG).show();
                 } else if (otherUsername.equals("") && otherId.equals("")) {
                     Toast.makeText(ConnectAnotherActivity.this,
-                            "Please fill in one field", Toast.LENGTH_LONG).show();
+                            "Please fill in at least one field", Toast.LENGTH_LONG).show();
                 } else {
                     if (!otherUsername.equals("")){
                         // TODO: Set receiver username as otherUsername
+                        Toast.makeText(ConnectAnotherActivity.this,
+                                "Validating recipient username...", Toast.LENGTH_LONG).show();
+                        try {
+                            Thread.sleep(4000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        startActivity(new Intent(ConnectAnotherActivity.this, ChatActivity.class));
+
                     } else {
                         // TODO: Set receiver ID as otherId
+                        Toast.makeText(ConnectAnotherActivity.this,
+                                "Validating recipient ID...", Toast.LENGTH_LONG).show();
+                        try {
+                            Thread.sleep(4000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        startActivity(new Intent(ConnectAnotherActivity.this, ChatActivity.class));
+
                     }
                 }
             }

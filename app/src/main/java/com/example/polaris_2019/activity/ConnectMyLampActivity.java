@@ -23,7 +23,7 @@ import com.google.android.gms.tasks.Task;
 
 */
 
-public class LoginActivity extends AppCompatActivity {
+public class ConnectMyLampActivity extends AppCompatActivity {
 
     private SharedPreferences mPref;
 
@@ -63,14 +63,14 @@ public class LoginActivity extends AppCompatActivity {
         LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, ConnectAnotherActivity.class));
+                startActivity(new Intent(ConnectMyLampActivity.this, ConnectAnotherActivity.class));
             }
         });
 
         RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                startActivity(new Intent(ConnectMyLampActivity.this, RegisterActivity.class));
             }
         });
 
@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
         RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                startActivity(new Intent(ConnectMyLampActivity.this, RegisterActivity.class));
             }
         });
 
@@ -110,9 +110,9 @@ public class LoginActivity extends AppCompatActivity {
         // TODO: remove when implementing database
         if(email.equals(dEmail) && password.equals(dPass)){
             finish();
-            startActivity(new Intent(LoginActivity.this, ConnectAnotherActivity.class));
+            startActivity(new Intent(ConnectMyLampActivity.this, ConnectAnotherActivity.class));
         }else{
-            Toast.makeText(LoginActivity.this, "Authentication failed.",
+            Toast.makeText(ConnectMyLampActivity.this, "Authentication failed.",
                     Toast.LENGTH_SHORT).show();
         }
 
