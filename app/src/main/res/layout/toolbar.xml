@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/registertoolbar"
+    android:id="@+id/toolbar"
     android:layout_constraintTop_toTopOf="parent"
     android:layout_constraintLeft_toLeftOf="parent"
     android:layout_width="match_parent"
