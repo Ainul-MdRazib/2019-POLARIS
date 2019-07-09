@@ -16,6 +16,10 @@
         android:paddingBottom="15dp"
         app:layout_constraintTop_toTopOf="parent">
 
+    <include
+        android:id="@+id/single_message_toolBar"
+        layout="@layout/toolbar" />
+
         <TextView
             android:id="@+id/message_sentBy"
             android:layout_width="wrap_content"

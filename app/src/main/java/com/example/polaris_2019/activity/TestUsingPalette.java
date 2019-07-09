@@ -9,9 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import com.example.polaris_2019.R;
-
 import yuku.ambilwarna.AmbilWarnaDialog;
 
 public class TestUsingPalette extends AppCompatActivity {
