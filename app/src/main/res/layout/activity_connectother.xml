@@ -12,7 +12,8 @@
 
     <include
         android:id="@+id/connectothertoolbar"
-        layout="@layout/toolbar" />
+        layout="@layout/toolbar"
+        app:title="Connect to Other Lamp" />
 
     <ImageView
         android:id="@+id/connectotherLogo"

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.example.polaris_2019.R;
 
-public class testORpairActivity extends AppCompatActivity {
+public class TestOrPairActivity extends AppCompatActivity {
 
 
     private Toolbar mToolbar;
@@ -38,7 +38,7 @@ public class testORpairActivity extends AppCompatActivity {
         TestMyLamp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(testORpairActivity.this, TestMyLampActivity.class));
+                startActivity(new Intent(TestOrPairActivity.this, TestMyLampActivity.class));
                 finish();
             }
         });
@@ -49,7 +49,7 @@ public class testORpairActivity extends AppCompatActivity {
         connectother.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(testORpairActivity.this, ConnectAnotherActivity.class));
+                startActivity(new Intent(TestOrPairActivity.this, ConnectAnotherActivity.class));
                 finish();
             }
         });
