@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".activity.RegisterActivity"
             android:parentActivityName=".activity.LoginActivity"/>
+        <activity android:name=".activity.LoginActivity"
+            android:parentActivityName=".activity.ConnectMyLampActivity"/>
         <activity android:name=".activity.TestMyLampActivity"
             android:parentActivityName=".activity.testORpairActivity"/>
         <activity android:name="activity.ConnectAnotherActivity"
